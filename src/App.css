@@ -1,0 +1,15 @@
+.app {
+  border: 2px solid red;
+}
+.home {
+  margin: 10px 10px 50px 10px;
+  border: 2px solid blue;
+}
+.contact {
+  margin: 10px;
+  border: 2px solid green;
+}
+.name-form {
+  margin: 10px;
+  border: 2px solid purple;
+}
