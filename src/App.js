@@ -10,10 +10,12 @@ import './App.css';
 
 class App extends Component {
 
+  // Setup state only in this component
   state = {
     firstName: ''
   }
 
+  // Functions for this component
   nameChange = (event) => {
     this.setState({
       firstName: event.target.value
@@ -22,6 +24,7 @@ class App extends Component {
   }
   
 
+  // Passing props down from this component to HomePage on Line 38
   render() {
     return (
       <div className="app">
@@ -35,12 +38,6 @@ class App extends Component {
         <HomePage name={this.state.firstName}/>
 
         <ContactPage />
-
-
-
-
-        {/* <ResumePage /> */}
-        {/* <AboutPage /> */}
       </div>
     );
   }
